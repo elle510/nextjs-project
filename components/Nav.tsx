@@ -1,8 +1,14 @@
 import Link from 'next/link';
+import { useEffect } from 'react';
 import navStyles from '../styles/Nav.module.css';
 
 const Nav: React.FC = () => {
-  console.log('Nav');
+  useEffect(() => {
+    console.log('Nav componentDidMount');
+  }, []);
+
+  console.log('Render Nav');
+
   return (
     <nav className={navStyles.nav}>
       <ul>

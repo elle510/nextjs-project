@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Head from 'next/head';
 
 const about = () => {
+  useEffect(() => {
+    console.log('about componentDidMount');
+  }, []);
+  console.log('Render about');
+
   return (
     <div>
       <Head>
