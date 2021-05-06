@@ -1,5 +1,3 @@
-import Head from 'next/head';
-
 import ArticleList from '../components/ArticleList';
 import { server } from '../config';
 // import styles from '../styles/Home.module.css';
@@ -9,11 +7,6 @@ export default function Home({ articles }) {
   return (
     <div>
       {/* className={styles.container} */}
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="keywords" contents="web development, programming" />
-      </Head>
 
       <ArticleList articles={articles} />
       {/* <main className={styles.main}>
